@@ -32,6 +32,8 @@ class TimerController: UIViewController{
         click?.setTitle("click", for: .normal)
         self.view.addSubview(click!)
         
+        self.view.backgroundColor = .red
+        
         label = UILabel(frame: CGRect(x: 97, y: 110, width: 220, height: 220))
         label?.backgroundColor = .clear
         label?.font = UIFont.systemFont(ofSize: 150)

@@ -24,6 +24,7 @@ class FontController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         let width = UIScreen.main.bounds.width
         let height = UIScreen.main.bounds.height
+        self.view.backgroundColor = .blue
         fontNum = 0
         tableView = UITableView(frame: CGRect(x: UIScreen.main.bounds.origin.x, y: UIScreen.main.bounds.origin.y, width: width, height: height - 300))
         tableView?.register(UITableViewCell.self, forCellReuseIdentifier: "FontCell")
@@ -33,7 +34,7 @@ class FontController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         button = UIButton(frame:CGRect(x: 172, y: height - 200, width: 70, height: 70))
         button?.layer.cornerRadius = 35
-        button?.backgroundColor = .gray
+        button?.backgroundColor = .green
         button?.setTitle("click", for: .normal)
         button?.addTarget(self, action: #selector(self.change), for: .touchDown)
         self.view.addSubview(button!)
