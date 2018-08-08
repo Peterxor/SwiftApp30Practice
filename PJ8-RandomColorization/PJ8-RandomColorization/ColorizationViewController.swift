@@ -40,11 +40,9 @@ class ColorizationViewController: UIViewController {
         }
         timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(self.colorChange), userInfo: nil, repeats: true)
         
-        let color1 = UIColor(red: 1, green: 0, blue: 0, alpha: 0.4).cgColor as CGColor
-        let color2 = UIColor(red: 0, green: 1, blue: 0, alpha: 0.3).cgColor as CGColor
-        let color3 = UIColor(red: 0, green: 0, blue: 1, alpha: 0.3).cgColor as CGColor
-        
-        
+        let color1 = UIColor(red: 1, green: 0, blue: 0, alpha: 0.4).cgColor
+        let color2 = UIColor(red: 0, green: 1, blue: 0, alpha: 0.3).cgColor
+        let color3 = UIColor(red: 0, green: 0, blue: 1, alpha: 0.3).cgColor
         
         gradientLayer = CAGradientLayer()
         gradientLayer?.frame = self.view.bounds
